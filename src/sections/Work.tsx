@@ -26,7 +26,10 @@ const links: Record<string, { live?: string; repo?: string }> = {
     live: "https://naifdev1.github.io/nova-landing-page/",
     repo: "https://github.com/NAIFDev1/nova-landing-page",
   },
-  forge: {},
+  forge: {
+    live: "https://forge-saas-landing.naifalghamdi.workers.dev",
+    repo: "https://github.com/NAIFDev1/forge-saas-landing",
+  },
 };
 
 function ProjectModal({ project, onClose }: { project: Project; onClose: () => void }) {
