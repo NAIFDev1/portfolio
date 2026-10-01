@@ -87,12 +87,13 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { name: "author", content: "Naif Alghamdi" },
       { property: "og:site_name", content: "Naif Alghamdi" },
       { property: "og:type", content: "website" },
-      { property: "og:image", content: `${site.url}/og-image.png` },
+      { property: "og:image", content: `${site.url}/og-image.png?v=${site.ogImageVersion}` },
       { property: "og:image:width", content: "1200" },
       { property: "og:image:height", content: "630" },
+      { property: "og:image:type", content: "image/png" },
       { property: "og:image:alt", content: "Naif Alghamdi — Front-End Developer" },
       { name: "twitter:card", content: "summary_large_image" },
-      { name: "twitter:image", content: `${site.url}/og-image.png` },
+      { name: "twitter:image", content: `${site.url}/og-image.png?v=${site.ogImageVersion}` },
     ],
     links: [
       {

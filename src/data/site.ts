@@ -10,6 +10,12 @@ export const site = {
    * Update this when the site moves to its final host.
    */
   url: "https://naif-portfolio.naifalghamdi.workers.dev",
+  /**
+   * Bump this whenever public/og-image.png changes. Social platforms cache an
+   * og:image by its exact URL, so a new file at the same path keeps serving the
+   * old artwork. The query string makes the URL change, forcing a re-scrape.
+   */
+  ogImageVersion: "2",
   year: "2026",
   email: "naif.alghamdi1@outlook.com",
   // Put your PDF at public/resume.pdf, or point this at an external URL.
