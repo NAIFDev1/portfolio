@@ -120,7 +120,7 @@ export const contentEn = {
         challenges:
           "Presenting a large amount of analysis data in a way that stays readable and calm, and keeping the interface responsive across screen sizes.",
         outcome:
-          "A working platform that turns a resume into clear, structured feedback with live demo and source code below.",
+          "A working platform that turns a resume into clear, structured feedback. The full-stack build (Express, MySQL, OpenAI) needs a server, so only the source is linked here.",
       },
     },
     {
@@ -396,7 +396,7 @@ export const contentAr: Content = {
         challenges:
           "عرض كمية كبيرة من بيانات التحليل بشكل هادئ وسهل القراءة، مع الحفاظ على تجاوب الواجهة على مختلف الشاشات.",
         outcome:
-          "منصة تعمل وتحوّل السيرة الذاتية إلى ملاحظات واضحة ومنظّمة، مع رابط العرض المباشر والشفرة المصدرية أدناه.",
+          "منصة تعمل وتحوّل السيرة الذاتية إلى ملاحظات واضحة ومنظّمة. النسخة الكاملة (Express و MySQL و OpenAI) تحتاج سيرفر، لذلك يظهر هنا رابط الشفرة المصدرية فقط.",
       },
     },
     {
