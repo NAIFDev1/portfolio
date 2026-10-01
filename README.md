@@ -4,17 +4,15 @@ Personal portfolio website for **Naif Alghamdi**, front-end developer. Fully bil
 
 ---
 
-## ⚠️ Read this first: the live link still shows the old version
+## 🟢 Live site
 
-The public URL **[naifdev1.github.io/portfolio](https://naifdev1.github.io/portfolio)** currently serves the **previous version** of this portfolio — not the code in this repository.
+**[naif-portfolio.naifalghamdi.workers.dev](https://naif-portfolio.naifalghamdi.workers.dev)**
 
-The code here is a **complete rewrite** and has **not been deployed yet**:
+Deployed on **Cloudflare Workers** (Nitro, `cloudflare-module` preset). The metadata origin is set once in `src/data/site.ts` (`site.url`), and `public/sitemap.xml` and `public/robots.txt` use the same origin — update all three if the site moves to a custom domain.
 
-- This project builds for **Cloudflare Workers** (Nitro, `cloudflare-module` preset), **not** GitHub Pages.
-- The old site is still being served from the `gh-pages` branch of this repository.
-- The metadata origin is set once in `src/data/site.ts` (`site.url`), and `public/sitemap.xml` and `public/robots.txt` use the same origin. Update `site.url` if the site moves to a different host.
+### The old GitHub Pages link is stale
 
-So: browsing the live link today = old portfolio. This repository = the new one.
+**[naifdev1.github.io/portfolio](https://naifdev1.github.io/portfolio)** still serves the **previous version** of this portfolio from the `gh-pages` branch. It is not updated by this repository.
 
 ---
 
@@ -143,12 +141,14 @@ All of the code is owned, reviewed, and maintained by the author.
 
 بورتفوليو **نايف الغامدي** — موقع شخصي ثنائي اللغة (عربي/إنجليزي) بدعم كامل للاتجاه من اليمين لليسار.
 
-**تنبيه مهم بخصوص الرابط المباشر:** الرابط
+**الموقع المباشر:** **[naif-portfolio.naifalghamdi.workers.dev](https://naif-portfolio.naifalghamdi.workers.dev)**
+منشور على **Cloudflare Workers**. أصل الموقع في بيانات الـSEO مضبوط في `src/data/site.ts`
+(`site.url`)، ويستخدم نفس الأصل في `public/sitemap.xml` و`public/robots.txt` — تحتاج تحديث
+الثلاثة معاً إذا نُقل الموقع إلى نطاق خاص.
+
+**تنبيه:** الرابط
 **[naifdev1.github.io/portfolio](https://naifdev1.github.io/portfolio)**
-يعرض حالياً **النسخة القديمة** من البورتفوليو، وليس الكود الموجود في هذا المستودع. الكود هنا
-إعادة كتابة كاملة **لم تُنشر بعد**، ويُبنى لـ **Cloudflare Workers** وليس GitHub Pages، لذلك
-النسخة القديمة ما زالت تعمل من فرع `gh-pages`. أصل الموقع في بيانات الـSEO مضبوط في
-`src/data/site.ts` (`site.url`)، ويحتاج تحديثاً واحداً فقط إذا نُقل الموقع إلى مضيف آخر.
+ما زال يعرض **النسخة القديمة** من البورتفوليو من فرع `gh-pages`، ولا يُحدَّث من هذا المستودع.
 
 **التقنيات:** TanStack Start (React 19) · TypeScript · Vite 8 · Tailwind CSS v4 · Nitro 3 على
 Cloudflare Workers · خطوط مستضافة محلياً (Outfit + IBM Plex Sans Arabic) بدون أي طلبات خارجية.

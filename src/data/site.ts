@@ -9,7 +9,7 @@ export const site = {
    * (canonical, og:url, sitemap, robots).
    * Update this when the site moves to its final host.
    */
-  url: "https://naifdev1.github.io/portfolio",
+  url: "https://naif-portfolio.naifalghamdi.workers.dev",
   year: "2026",
   email: "naif.alghamdi1@outlook.com",
   // Put your PDF at public/resume.pdf, or point this at an external URL.

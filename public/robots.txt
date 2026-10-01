@@ -13,4 +13,4 @@ Allow: /
 User-agent: *
 Allow: /
 
-Sitemap: https://naifdev1.github.io/portfolio/sitemap.xml
+Sitemap: https://naif-portfolio.naifalghamdi.workers.dev/sitemap.xml
