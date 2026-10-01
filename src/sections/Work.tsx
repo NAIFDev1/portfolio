@@ -17,7 +17,10 @@ const images: Record<string, { src: string; width: number; height: number }> = {
 
 /** Optional external links per project id. Leave empty to hide the buttons. */
 const links: Record<string, { live?: string; repo?: string }> = {
-  khabir: {},
+  khabir: {
+    live: "https://naifdev1.github.io/resume-expert-ai/",
+    repo: "https://github.com/NAIFDev1/resume-expert-ai",
+  },
   nova: {
     live: "https://naifdev1.github.io/nova-landing-page/",
     repo: "https://github.com/NAIFDev1/nova-landing-page",

@@ -120,7 +120,7 @@ export const contentEn = {
         challenges:
           "Presenting a large amount of analysis data in a way that stays readable and calm, and keeping the interface responsive across screen sizes.",
         outcome:
-          "A working platform that turns a resume into clear, structured feedback. Links will be added here once the project is published.",
+          "A working platform that turns a resume into clear, structured feedback with live demo and source code below.",
       },
     },
     {
@@ -396,7 +396,7 @@ export const contentAr: Content = {
         challenges:
           "عرض كمية كبيرة من بيانات التحليل بشكل هادئ وسهل القراءة، مع الحفاظ على تجاوب الواجهة على مختلف الشاشات.",
         outcome:
-          "منصة تعمل وتحوّل السيرة الذاتية إلى ملاحظات واضحة ومنظّمة. ستُضاف الروابط هنا عند نشر المشروع.",
+          "منصة تعمل وتحوّل السيرة الذاتية إلى ملاحظات واضحة ومنظّمة، مع رابط العرض المباشر والشفرة المصدرية أدناه.",
       },
     },
     {
