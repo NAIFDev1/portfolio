@@ -1,4 +1,4 @@
-import { useI18n } from "@/i18n/provider";
+import { useI18n } from "@/i18n/context";
 
 export function Marquee() {
   const { t } = useI18n();

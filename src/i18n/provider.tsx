@@ -1,20 +1,9 @@
-import { createContext, useCallback, useContext, useEffect, useMemo, useState } from "react";
+import { useCallback, useEffect, useMemo, useState } from "react";
 import type { ReactNode } from "react";
-import { contentAr, contentEn, type Content } from "./content";
-
-export type Lang = "en" | "ar";
+import { I18nContext, type I18nContextValue, type Lang } from "./context";
+import { contentAr, contentEn } from "./content";
 
 const LANG_KEY = "na-lang";
-
-type Ctx = {
-  lang: Lang;
-  dir: "ltr" | "rtl";
-  t: Content;
-  setLang: (l: Lang) => void;
-  toggleLang: () => void;
-};
-
-const I18nContext = createContext<Ctx | null>(null);
 
 export function I18nProvider({ children }: { children: ReactNode }) {
   const [lang, setLangState] = useState<Lang>("en");
@@ -43,7 +32,7 @@ export function I18nProvider({ children }: { children: ReactNode }) {
     }
   }, []);
 
-  const value = useMemo<Ctx>(
+  const value = useMemo<I18nContextValue>(
     () => ({
       lang,
       dir: lang === "ar" ? "rtl" : "ltr",
@@ -55,10 +44,4 @@ export function I18nProvider({ children }: { children: ReactNode }) {
   );
 
   return <I18nContext.Provider value={value}>{children}</I18nContext.Provider>;
-}
-
-export function useI18n() {
-  const ctx = useContext(I18nContext);
-  if (!ctx) throw new Error("useI18n must be used inside I18nProvider");
-  return ctx;
 }

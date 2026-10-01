@@ -1,8 +1,9 @@
 import { useEffect, useState } from "react";
 import portraitAsset from "@/assets/hero-portrait.webp";
 import { site } from "@/data/site";
-import { useI18n } from "@/i18n/provider";
-import { Arrow, pillClass } from "@/components/ui-bits";
+import { useI18n } from "@/i18n/context";
+import { Arrow } from "@/components/ui-bits";
+import { pillClass } from "@/lib/pill";
 import { usePrefersReducedMotion } from "@/hooks/use-portfolio";
 
 function scrollTo(id: string) {

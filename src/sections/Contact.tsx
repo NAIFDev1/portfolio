@@ -1,7 +1,8 @@
 import { useState, type FormEvent } from "react";
 import { site } from "@/data/site";
-import { useI18n } from "@/i18n/provider";
-import { Arrow, Heading, Section, SectionLabel, pillClass } from "@/components/ui-bits";
+import { useI18n } from "@/i18n/context";
+import { Arrow, Heading, Section, SectionLabel } from "@/components/ui-bits";
+import { pillClass } from "@/lib/pill";
 
 type Status = "idle" | "loading" | "success" | "error";
 type Errors = { name?: string; email?: string; message?: string };

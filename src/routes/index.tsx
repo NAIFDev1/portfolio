@@ -18,7 +18,7 @@ import { Contact, Footer } from "@/sections/Contact";
 import { useRevealObserver } from "@/hooks/use-portfolio";
 import { contentEn } from "@/i18n/content";
 import { site } from "@/data/site";
-import { useI18n } from "@/i18n/provider";
+import { useI18n } from "@/i18n/context";
 
 const title = "Naif Alghamdi — Front-End Developer";
 const description =

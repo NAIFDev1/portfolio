@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from "react";
-import { useI18n } from "@/i18n/provider";
+import { useI18n } from "@/i18n/context";
 
 export function usePrefersReducedMotion() {
   const [reduced, setReduced] = useState(false);

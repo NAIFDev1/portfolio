@@ -1,8 +1,8 @@
 import { useMemo, useState } from "react";
 import { Menu, Moon, Sun, X } from "lucide-react";
 import { site } from "@/data/site";
-import { useI18n } from "@/i18n/provider";
-import { useTheme } from "@/lib/theme";
+import { useI18n } from "@/i18n/context";
+import { useTheme } from "@/lib/theme-context";
 import { useActiveSection, useScrollDirection } from "@/hooks/use-portfolio";
 import { cn } from "@/lib/utils";
 

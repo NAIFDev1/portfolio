@@ -1,13 +1,8 @@
-import { createContext, useCallback, useContext, useEffect, useMemo, useState } from "react";
+import { useCallback, useEffect, useMemo, useState } from "react";
 import type { ReactNode } from "react";
-
-export type Theme = "dark" | "light";
+import { ThemeContext, type Theme, type ThemeContextValue } from "./theme-context";
 
 const THEME_KEY = "na-theme";
-
-type Ctx = { theme: Theme; setTheme: (t: Theme) => void; toggleTheme: () => void };
-
-const ThemeContext = createContext<Ctx | null>(null);
 
 export function ThemeProvider({ children }: { children: ReactNode }) {
   const [theme, setThemeState] = useState<Theme>("dark");
@@ -34,16 +29,10 @@ export function ThemeProvider({ children }: { children: ReactNode }) {
     }
   }, []);
 
-  const value = useMemo<Ctx>(
+  const value = useMemo<ThemeContextValue>(
     () => ({ theme, setTheme, toggleTheme: () => setTheme(theme === "dark" ? "light" : "dark") }),
     [theme, setTheme],
   );
 
   return <ThemeContext.Provider value={value}>{children}</ThemeContext.Provider>;
-}
-
-export function useTheme() {
-  const ctx = useContext(ThemeContext);
-  if (!ctx) throw new Error("useTheme must be used inside ThemeProvider");
-  return ctx;
 }

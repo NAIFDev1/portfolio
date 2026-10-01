@@ -2,9 +2,10 @@ import { useEffect, useState } from "react";
 import khabirPreview from "@/assets/khabir-screenshot.webp";
 import novaPreview from "@/assets/nova.webp";
 import forgePreview from "@/assets/forge.webp";
-import { useI18n } from "@/i18n/provider";
+import { useI18n } from "@/i18n/context";
 import type { Content } from "@/i18n/content";
-import { Arrow, Heading, Section, SectionLabel, pillClass } from "@/components/ui-bits";
+import { Arrow, Heading, Section, SectionLabel } from "@/components/ui-bits";
+import { pillClass } from "@/lib/pill";
 
 type Project = Content["projects"][number];
 

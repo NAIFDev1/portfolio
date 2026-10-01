@@ -12,7 +12,7 @@ The code here is a **complete rewrite** and has **not been deployed yet**:
 
 - This project builds for **Cloudflare Workers** (Nitro, `cloudflare-module` preset), **not** GitHub Pages.
 - The old site is still being served from the `gh-pages` branch of this repository.
-- Before deploying, set the site origin in `src/data/site.ts` (`site.url` is intentionally empty) and replace `https://YOUR-DOMAIN` in `public/sitemap.xml` and `public/robots.txt`.
+- The metadata origin is set once in `src/data/site.ts` (`site.url`), and `public/sitemap.xml` and `public/robots.txt` use the same origin. Update `site.url` if the site moves to a different host.
 
 So: browsing the live link today = old portfolio. This repository = the new one.
 
@@ -146,9 +146,9 @@ All of the code is owned, reviewed, and maintained by the author.
 **تنبيه مهم بخصوص الرابط المباشر:** الرابط
 **[naifdev1.github.io/portfolio](https://naifdev1.github.io/portfolio)**
 يعرض حالياً **النسخة القديمة** من البورتفوليو، وليس الكود الموجود في هذا المستودع. الكود هنا
-إعادة كتابة كاملة **لم تُنشر بعد**، ويُبنى لـ **Cloudflare Workers** وليس GitHub Pages، поэтому
-النسخة القديمة ما زالت تعمل من فرع `gh-pages`. قبل النشر يجب ضبط `site.url` في
-`src/data/site.ts` (فارغ حالياً) واستبدال `YOUR-DOMAIN` في `sitemap.xml` و`robots.txt`.
+إعادة كتابة كاملة **لم تُنشر بعد**، ويُبنى لـ **Cloudflare Workers** وليس GitHub Pages، لذلك
+النسخة القديمة ما زالت تعمل من فرع `gh-pages`. أصل الموقع في بيانات الـSEO مضبوط في
+`src/data/site.ts` (`site.url`)، ويحتاج تحديثاً واحداً فقط إذا نُقل الموقع إلى مضيف آخر.
 
 **التقنيات:** TanStack Start (React 19) · TypeScript · Vite 8 · Tailwind CSS v4 · Nitro 3 على
 Cloudflare Workers · خطوط مستضافة محلياً (Outfit + IBM Plex Sans Arabic) بدون أي طلبات خارجية.

@@ -5,11 +5,11 @@
 
 export const site = {
   /**
-   * Site origin used to build absolute URLs for SEO/OG metadata.
-   * Set this before deploying (e.g. "https://your-domain.com").
-   * While empty, metadata uses relative URLs.
+   * Site origin used to build absolute URLs for SEO/OG metadata
+   * (canonical, og:url, sitemap, robots).
+   * Update this when the site moves to its final host.
    */
-  url: "",
+  url: "https://naifdev1.github.io/portfolio",
   year: "2026",
   email: "naif.alghamdi1@outlook.com",
   // Put your PDF at public/resume.pdf, or point this at an external URL.
