@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import khabirPreview from "@/assets/khabir-screenshot.webp";
 import novaPreview from "@/assets/nova.webp";
-import forgePreview from "@/assets/forge.webp";
+import forgePreview from "@/assets/forge-responsive-mockup.webp";
 import { useI18n } from "@/i18n/context";
 import type { Content } from "@/i18n/content";
 import { Arrow, Heading, Section, SectionLabel } from "@/components/ui-bits";
@@ -12,7 +12,7 @@ type Project = Content["projects"][number];
 const images: Record<string, { src: string; width: number; height: number }> = {
   khabir: { src: khabirPreview, width: 1400, height: 692 },
   nova: { src: novaPreview, width: 1440, height: 900 },
-  forge: { src: forgePreview, width: 1440, height: 900 },
+  forge: { src: forgePreview, width: 1586, height: 992 },
 };
 
 /** Optional external links per project id. Leave empty to hide the buttons. */
