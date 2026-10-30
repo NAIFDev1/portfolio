@@ -100,7 +100,7 @@ export const contentEn = {
       tagline: "AI-Powered Resume Analyzer",
       description:
         "A smart resume analysis platform designed to evaluate resumes, identify relevant keywords, provide ATS-oriented scoring, highlight skill gaps, and match resumes with job requirements.",
-      tech: ["React", "TypeScript", "Node.js", "Express", "PostgreSQL", "Tailwind CSS"],
+      tech: ["React", "TypeScript", "Node.js", "Express", "MySQL", "Tailwind CSS"],
       caseStudy: {
         overview:
           "Khabir analyses a resume against a target job description and returns structured, actionable feedback instead of a generic score.",
@@ -181,6 +181,35 @@ export const contentEn = {
           "Making simulated interactions feel real — sequencing the terminal script and the CI pipeline so they read as running processes rather than static animation — and keeping dense technical content such as code, logs and metrics legible on small screens.",
         outcome:
           "A complete single page covering an entire product narrative, with a WebGL background that respects reduced-motion preferences and no console errors.",
+      },
+    },
+    {
+      id: "weatherflow",
+      number: "04",
+      title: "WeatherFlow",
+      tagline: "Your daily weather outlook",
+      description:
+        "A responsive weather dashboard with precise city search, interactive hourly forecasts, a seven-day outlook and saved display preferences.",
+      tech: ["HTML", "CSS", "JavaScript", "Open-Meteo"],
+      caseStudy: {
+        overview:
+          "WeatherFlow brings current conditions and hourly and daily forecasts into one practical weather workspace.",
+        problem:
+          "Checking the weather should make the city, local time, forecast period and measurement units clear at a glance.",
+        solution:
+          "A lightweight interface with city disambiguation, temperature, rain and wind charts, selectable daily forecasts, readable details and matching light and dark themes.",
+        myRole:
+          "Interface design and front-end implementation, API integration, responsive layouts and data-state handling.",
+        features: [
+          "Precise city search and browser location",
+          "Interactive hourly and seven-day forecasts",
+          "City-local times and consistent metric/imperial units",
+          "Saved preferences and clearly labeled forecast recovery",
+        ],
+        challenges:
+          "Keeping timezone boundaries, missing values and overlapping requests accurate while making the same forecast readable on a phone and a desktop.",
+        outcome:
+          "A working weather tool with clear city selection, consistent unit conversion and forecasts scoped to the selected day.",
       },
     },
   ],
@@ -376,7 +405,7 @@ export const contentAr: Content = {
       tagline: "محلّل سير ذاتية مدعوم بالذكاء الاصطناعي",
       description:
         "منصة ذكية لتحليل السير الذاتية: تقيّم السيرة، تستخرج الكلمات المفتاحية، تمنح درجة توافق مع أنظمة التوظيف، وتوضّح الفجوات في المهارات ومدى مطابقة السيرة لمتطلبات الوظيفة.",
-      tech: ["React", "TypeScript", "Node.js", "Express", "PostgreSQL", "Tailwind CSS"],
+      tech: ["React", "TypeScript", "Node.js", "Express", "MySQL", "Tailwind CSS"],
       caseStudy: {
         overview:
           "يحلّل «خبير» السيرة الذاتية مقابل وصف وظيفي محدد ويعيد ملاحظات منظّمة وقابلة للتنفيذ بدل درجة عامة.",
@@ -457,6 +486,35 @@ export const contentAr: Content = {
           "جعل التفاعلات المحاكاة تبدوان حقيقيتين — بتسلسل سيناريو الطرفية ومسار التكامل المستمر حتى يُقرأا كعمليتين تعملان لا كحركة ثابتة — مع الحفاظ على وضوح المحتوى التقني الكثيف مثل الكود والسجلات والمؤشرات على الشاشات الصغيرة.",
         outcome:
           "صفحة واحدة متكاملة تغطي قصة منتج كاملة، بخلفية WebGL تحترم تفضيل تقليل الحركة وبلا أخطاء في وحدة التحكم.",
+      },
+    },
+    {
+      id: "weatherflow",
+      number: "٠٤",
+      title: "WeatherFlow",
+      tagline: "نظرة أوضح على طقس يومك",
+      description:
+        "لوحة طقس متجاوبة تجمع البحث الدقيق عن المدن، والتوقعات التفاعلية بالساعات، ونظرة للأيام السبعة المقبلة، مع حفظ تفضيلات العرض.",
+      tech: ["HTML", "CSS", "JavaScript", "Open-Meteo"],
+      caseStudy: {
+        overview:
+          "يجمع WeatherFlow حالة الطقس الحالية والتوقعات بالساعات والأيام في مساحة واحدة سهلة الاستخدام.",
+        problem:
+          "قراءة الطقس تحتاج وضوح المدينة والتوقيت المحلي وفترة التوقع ووحدات القياس من النظرة الأولى.",
+        solution:
+          "واجهة خفيفة تميّز المدن المتشابهة، وتعرض مخططات الحرارة والمطر والرياح، وتوقعات يومية قابلة للاختيار، وتفاصيل واضحة بوضعين فاتح وداكن.",
+        myRole:
+          "تصميم الواجهة وتنفيذها، وربط بيانات الطقس، وبناء التخطيطات المتجاوبة ومعالجة حالات البيانات.",
+        features: [
+          "بحث دقيق عن المدن وتحديد الموقع عبر المتصفح",
+          "توقعات تفاعلية بالساعات ولسبعة أيام",
+          "توقيت محلي لكل مدينة وتحويل متّسق لوحدات القياس",
+          "حفظ التفضيلات واستعادة التوقع المحفوظ مع توضيح حالته",
+        ],
+        challenges:
+          "ضبط اختلاف المناطق الزمنية والقيم المفقودة والطلبات المتزامنة، مع إبقاء التوقعات واضحة على الجوال والكمبيوتر.",
+        outcome:
+          "أداة طقس تعمل ببحث واضح عن المدن وتحويل دقيق للوحدات وتوقعات مرتبطة باليوم المختار.",
       },
     },
   ],

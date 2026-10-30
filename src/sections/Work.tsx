@@ -1,7 +1,8 @@
 import { useEffect, useState } from "react";
-import khabirPreview from "@/assets/khabir-screenshot.webp";
-import novaPreview from "@/assets/nova.webp";
+import khabirPreview from "@/assets/khabir-responsive-poster.png";
+import novaPreview from "@/assets/nova-studio-poster.png";
 import forgePreview from "@/assets/forge-responsive-mockup.webp";
+import weatherflowPreview from "@/assets/weatherflow-responsive-mockup.png";
 import { useI18n } from "@/i18n/context";
 import type { Content } from "@/i18n/content";
 import { Arrow, Heading, Section, SectionLabel } from "@/components/ui-bits";
@@ -10,9 +11,10 @@ import { pillClass } from "@/lib/pill";
 type Project = Content["projects"][number];
 
 const images: Record<string, { src: string; width: number; height: number }> = {
-  khabir: { src: khabirPreview, width: 1400, height: 692 },
-  nova: { src: novaPreview, width: 1440, height: 900 },
+  khabir: { src: khabirPreview, width: 1586, height: 992 },
+  nova: { src: novaPreview, width: 1586, height: 992 },
   forge: { src: forgePreview, width: 1586, height: 992 },
+  weatherflow: { src: weatherflowPreview, width: 1586, height: 992 },
 };
 
 /** Optional external links per project id. Leave empty to hide the buttons. */
@@ -29,6 +31,10 @@ const links: Record<string, { live?: string; repo?: string }> = {
   forge: {
     live: "https://forge-saas-landing.naifalghamdi.workers.dev",
     repo: "https://github.com/NAIFDev1/forge-saas-landing",
+  },
+  weatherflow: {
+    // The redesigned app is under review; link its exact source until it is published.
+    repo: "https://github.com/NAIFDev1/Weather-Dashboard/tree/codex/weatherflow-complete-upgrade",
   },
 };
 
