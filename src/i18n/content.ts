@@ -100,7 +100,7 @@ export const contentEn = {
       tagline: "AI-Powered Resume Analyzer",
       description:
         "A smart resume analysis platform designed to evaluate resumes, identify relevant keywords, provide ATS-oriented scoring, highlight skill gaps, and match resumes with job requirements.",
-      tech: ["React", "TypeScript", "Node.js", "Express", "PostgreSQL", "Tailwind CSS"],
+      tech: ["React", "TypeScript", "Node.js", "Express", "MySQL", "Tailwind CSS"],
       caseStudy: {
         overview:
           "Khabir analyses a resume against a target job description and returns structured, actionable feedback instead of a generic score.",
@@ -405,7 +405,7 @@ export const contentAr: Content = {
       tagline: "محلّل سير ذاتية مدعوم بالذكاء الاصطناعي",
       description:
         "منصة ذكية لتحليل السير الذاتية: تقيّم السيرة، تستخرج الكلمات المفتاحية، تمنح درجة توافق مع أنظمة التوظيف، وتوضّح الفجوات في المهارات ومدى مطابقة السيرة لمتطلبات الوظيفة.",
-      tech: ["React", "TypeScript", "Node.js", "Express", "PostgreSQL", "Tailwind CSS"],
+      tech: ["React", "TypeScript", "Node.js", "Express", "MySQL", "Tailwind CSS"],
       caseStudy: {
         overview:
           "يحلّل «خبير» السيرة الذاتية مقابل وصف وظيفي محدد ويعيد ملاحظات منظّمة وقابلة للتنفيذ بدل درجة عامة.",
