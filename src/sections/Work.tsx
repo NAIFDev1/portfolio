@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import khabirPreview from "@/assets/khabir-screenshot.webp";
-import novaPreview from "@/assets/nova.webp";
+import novaPreview from "@/assets/nova-studio-poster.png";
 import forgePreview from "@/assets/forge-responsive-mockup.webp";
 import weatherflowPreview from "@/assets/weatherflow-responsive-mockup.png";
 import { useI18n } from "@/i18n/context";
@@ -12,7 +12,7 @@ type Project = Content["projects"][number];
 
 const images: Record<string, { src: string; width: number; height: number }> = {
   khabir: { src: khabirPreview, width: 1400, height: 692 },
-  nova: { src: novaPreview, width: 1440, height: 900 },
+  nova: { src: novaPreview, width: 1586, height: 992 },
   forge: { src: forgePreview, width: 1586, height: 992 },
   weatherflow: { src: weatherflowPreview, width: 1586, height: 992 },
 };
