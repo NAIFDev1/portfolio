@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import khabirPreview from "@/assets/khabir-screenshot.webp";
+import khabirPreview from "@/assets/khabir-responsive-poster.png";
 import novaPreview from "@/assets/nova-studio-poster.png";
 import forgePreview from "@/assets/forge-responsive-mockup.webp";
 import weatherflowPreview from "@/assets/weatherflow-responsive-mockup.png";
@@ -11,7 +11,7 @@ import { pillClass } from "@/lib/pill";
 type Project = Content["projects"][number];
 
 const images: Record<string, { src: string; width: number; height: number }> = {
-  khabir: { src: khabirPreview, width: 1400, height: 692 },
+  khabir: { src: khabirPreview, width: 1586, height: 992 },
   nova: { src: novaPreview, width: 1586, height: 992 },
   forge: { src: forgePreview, width: 1586, height: 992 },
   weatherflow: { src: weatherflowPreview, width: 1586, height: 992 },
