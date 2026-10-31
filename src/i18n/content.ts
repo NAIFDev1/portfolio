@@ -212,6 +212,35 @@ export const contentEn = {
           "A working weather tool with clear city selection, consistent unit conversion and forecasts scoped to the selected day.",
       },
     },
+    {
+      id: "taskflow",
+      number: "05",
+      title: "TaskFlow",
+      tagline: "Make room for focused work.",
+      description:
+        "A personal task inbox that brings priorities and deadlines into focus, with a seven-day planner, list and Kanban views, portable backups and matching light and dark themes.",
+      tech: ["HTML", "CSS", "JavaScript", "Local Storage"],
+      caseStudy: {
+        overview:
+          "TaskFlow organizes personal work by status, priority and due date in a responsive, browser-local workspace.",
+        problem:
+          "A growing task list needs to make overdue work and upcoming deadlines easy to find without losing the context of each task.",
+        solution:
+          "A grouped deadline inbox with a clickable seven-day planner, combined search and filters, optional grid and Kanban views, and a responsive task sheet.",
+        myRole:
+          "Interface design, front-end implementation, responsive layouts, local data persistence and interaction verification.",
+        features: [
+          "Grouped deadlines and seven-day planning",
+          "List, grid and Kanban with a non-drag status control",
+          "JSON backups, targeted undo and cross-tab updates",
+          "Light and dark themes with keyboard shortcuts",
+        ],
+        challenges:
+          "Preserving existing task data while handling invalid imports, unavailable storage and conflicting edits between browser tabs.",
+        outcome:
+          "A dependency-free task manager with clear deadline signals, portable local data and a consistent desktop and mobile experience.",
+      },
+    },
   ],
 
   experience: {
@@ -515,6 +544,35 @@ export const contentAr: Content = {
           "ضبط اختلاف المناطق الزمنية والقيم المفقودة والطلبات المتزامنة، مع إبقاء التوقعات واضحة على الجوال والكمبيوتر.",
         outcome:
           "أداة طقس تعمل ببحث واضح عن المدن وتحويل دقيق للوحدات وتوقعات مرتبطة باليوم المختار.",
+      },
+    },
+    {
+      id: "taskflow",
+      number: "٠٥",
+      title: "TaskFlow",
+      tagline: "مساحة أوضح للعمل بتركيز.",
+      description:
+        "أداة شخصية لتنظيم المهام والأولويات والمواعيد، مع مخطط للأيام السبعة المقبلة، وعرض بالقائمة ولوحة كانبان، ونسخ احتياطية، ووضعين فاتح وداكن.",
+      tech: ["HTML", "CSS", "JavaScript", "Local Storage"],
+      caseStudy: {
+        overview:
+          "ينظّم TaskFlow العمل الشخصي حسب الحالة والأولوية والموعد في مساحة متجاوبة تحفظ البيانات داخل المتصفح.",
+        problem:
+          "مع زيادة المهام، تصبح معرفة المتأخر منها والمواعيد المقبلة أصعب، مع الحاجة إلى إبقاء تفاصيل كل مهمة قريبة.",
+        solution:
+          "قائمة مجمّعة حسب المواعيد مع مخطط أسبوعي قابل للاختيار، وبحث وفلاتر مشتركة، وعرض اختياري بالبطاقات وكانبان، ونموذج مهام يناسب الجوال.",
+        myRole:
+          "تصميم الواجهة وتطويرها، والتخطيط المتجاوب، وحفظ البيانات محليًا، والتحقق من التفاعلات.",
+        features: [
+          "تجميع المهام حسب المواعيد والتخطيط للأيام السبعة المقبلة",
+          "قائمة وبطاقات وكانبان مع تغيير الحالة دون السحب",
+          "نسخ JSON وتراجع عن التغييرات وتحديث بين التبويبات",
+          "وضعان فاتح وداكن واختصارات للوحة المفاتيح",
+        ],
+        challenges:
+          "الحفاظ على المهام السابقة مع معالجة ملفات الاستيراد غير الصالحة، وتعذّر التخزين، وتعارض التعديلات بين التبويبات.",
+        outcome:
+          "أداة مهام دون اعتماديات تشغيل، بمواعيد واضحة وبيانات محلية قابلة للنقل وتجربة متناسقة على الحاسب والجوال.",
       },
     },
   ],

@@ -3,6 +3,7 @@ import khabirPreview from "@/assets/khabir-responsive-poster.png";
 import novaPreview from "@/assets/nova-studio-poster.png";
 import forgePreview from "@/assets/forge-responsive-mockup.webp";
 import weatherflowPreview from "@/assets/weatherflow-responsive-mockup.png";
+import taskflowPreview from "@/assets/taskflow-responsive-poster.png";
 import { useI18n } from "@/i18n/context";
 import type { Content } from "@/i18n/content";
 import { Arrow, Heading, Section, SectionLabel } from "@/components/ui-bits";
@@ -15,6 +16,7 @@ const images: Record<string, { src: string; width: number; height: number }> = {
   nova: { src: novaPreview, width: 1586, height: 992 },
   forge: { src: forgePreview, width: 1586, height: 992 },
   weatherflow: { src: weatherflowPreview, width: 1586, height: 992 },
+  taskflow: { src: taskflowPreview, width: 1586, height: 992 },
 };
 
 /** Optional external links per project id. Leave empty to hide the buttons. */
@@ -35,6 +37,10 @@ const links: Record<string, { live?: string; repo?: string }> = {
   weatherflow: {
     // The redesigned app is under review; link its exact source until it is published.
     repo: "https://github.com/NAIFDev1/Weather-Dashboard/tree/codex/weatherflow-complete-upgrade",
+  },
+  taskflow: {
+    // Link the redesign source until the new interface is published.
+    repo: "https://github.com/NAIFDev1/Task-Management-Dashboard/tree/codex/taskflow-complete-redesign",
   },
 };
 
