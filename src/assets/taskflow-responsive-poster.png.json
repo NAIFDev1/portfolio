@@ -1,0 +1,11 @@
+{
+  "tool": "built-in image_gen",
+  "asset": "taskflow-responsive-poster.png",
+  "purpose": "TaskFlow portfolio poster",
+  "prompt": "Use case: product-mockup. Create one finished landscape portfolio project poster for TaskFlow, approximately 1600 x 1000, aspect 8:5. Input image 1 is the actual current TaskFlow desktop UI; input image 2 is the actual mobile UI. Use these as faithful screen inserts: keep their layout, brand, light theme, task inbox rows, real task text, neutral priority flags, blue date accents and red overdue date. Do not invent a different dashboard. Scene: refined studio product photograph/render on a pale cool blue-grey seamless background with softly lit surface and realistic soft contact shadows. Show a thin premium silver laptop open, large, occupying the center/right, its screen clearly facing the viewer with only a subtle three-quarter perspective; show a graphite slim modern smartphone upright immediately beside it on the left, slightly forward, screen facing viewer. Both devices fully visible with generous safe margins; no hands, props or extra floating UI. Device screens sharp, flat glass, bright and readable without reflections obscuring content; laptop screen displays image 1, phone screen displays image 2. Devices together occupy the lower 73% of composition. Above them, tasteful confident black sans-serif title exactly 'TaskFlow', and below it smaller text exactly 'Make room for focused work.' Match the restrained visual language of the app. Calm professional portfolio art direction, beautiful balanced whitespace, subtle material realism, neutral white/silver/graphite with restrained blue. No device manufacturer logos, no watermarks, no feature badges, no additional copy, no neon, no decorative dashboard graphs, no cropped device edges. Output one polished high-resolution raster poster.",
+  "references": [
+    "taskflow-desktop-reference.png",
+    "taskflow-mobile-reference.png"
+  ],
+  "source": "Generated from locally captured actual TaskFlow UI screenshots. Output inspected visually; laptop and phone, brand and tagline match. No portfolio source or deployment changed."
+}
